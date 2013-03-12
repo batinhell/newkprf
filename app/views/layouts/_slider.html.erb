@@ -1,0 +1,16 @@
+<div id="slidorion">
+  <div id="slider">
+    <% @posts.each do |post| %>
+    <div class="slide">
+      <%= image_tag post.image_url(:slider).to_s, :class => 'img-polaroid' %>
+    </div>
+    <% end %>
+  </div>
+   
+  <div id="accordion">
+    <% @posts.each do |post| %>
+    <div class="link-header"><%= post.title %></div>
+    <div class="link-content"></div> 
+    <% end %>
+  </div>
+</div>
