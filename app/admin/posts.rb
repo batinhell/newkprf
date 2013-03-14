@@ -3,6 +3,7 @@ ActiveAdmin.register Post do
   show do |ad|
         attributes_table do
           row :title
+          row :in_slider
           row :description do
             sanitize(ad.description)
           end
