@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 ActiveAdmin.register Post do
   form :partial => "form"
   show do |ad|
@@ -15,9 +14,9 @@ ActiveAdmin.register Post do
 
   index do
     column :title
-    column :description do |post|
-      sanitize(post.description)
-    end
+    # column :description do |post|
+    #   sanitize(post.description)
+    # end
     column :image do |post|
       image_tag(post.image_url(:thumb))
     end

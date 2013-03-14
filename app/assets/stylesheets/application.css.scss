@@ -22,8 +22,24 @@
 }
 
 body {
-  background: #000 url("https://locomotivehosting.s3.amazonaws.com/sites/4c34fc86cc85f01e47000005/theme/images/bg.png") repeat 0 0;
+  background: #000 url("http://cs1.kprf.ru/themes/dv/images/bg.png") repeat 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container-fluid {
   /*background-color: #eee;*/
@@ -31,7 +47,7 @@ body {
   .header {
     height: 80px;
     font-size: 30px;
-    background-color: #eee;
+    //background-color: #eee;
     border-radius:6px; 
   -webkit-border-radius:6px; 
   -moz-border-radius:5px; 
@@ -48,62 +64,62 @@ body {
 
   }
 
-  .row-fluid{
-    padding-top: 30px;
-    .span9 {
-      /*padding-top: 30px;*/
-      .news-slider {
-        height: 250px;
-          background-color: #eee;
-          border-radius:6px; 
-        -webkit-border-radius:6px; 
-        -moz-border-radius:5px; 
-        -khtml-border-radius:10px;
-      }
-    }
+  // .row {
+  //   padding-top: 30px;
+  //   .span9 {
+  //     /*padding-top: 30px;*/
+  //     .news-slider {
+  //       height: 250px;
+  //         background-color: #eee;
+  //         border-radius:6px; 
+  //       -webkit-border-radius:6px; 
+  //       -moz-border-radius:5px; 
+  //       -khtml-border-radius:10px;
+  //     }
+  //   }
 
-    .span3 {
+  //   .span3 {
 
-      .video {
-        height: 250px;
-        background-color: #eee;
-      }
+  //     .video {
+  //       height: 250px;
+  //       background-color: #eee;
+  //     }
 
-      .banners {
-        height: 150px;
-        background-color: #eee;
-        margin-top: 30px;
-      }
+  //     .banners {
+  //       height: 150px;
+  //       background-color: #eee;
+  //       margin-top: 30px;
+  //     }
 
-      .photo-slider {
-        height: 250px;
-        background-color: #eee;
-        margin-top: 20px;
-      }
-    }
+  //     .photo-slider {
+  //       height: 250px;
+  //       background-color: #eee;
+  //       margin-top: 20px;
+  //     }
+  //   }
 
-    .news {
-      margin-top: 30px;
-      background-color: #eee;
+  //   .news {
+  //     margin-top: 30px;
+  //     background-color: #eee;
 
-      ul {
-        overflow:hidden;
-        margin: 0;
+  //     ul {
+  //       overflow:hidden;
+  //       margin: 0;
       
-        li {
-          width: 50%;
-          float:left;
-          display:inline;
+  //       li {
+  //         width: 50%;
+  //         float:left;
+  //         display:inline;
 
-          .news_title {
-            padding-left: 10px;
-            padding-right: 10px;
-          }
-        }
-      }
-    }
+  //         .news_title {
+  //           padding-left: 10px;
+  //           padding-right: 10px;
+  //         }
+  //       }
+  //     }
+  //   }
       
     
-  }
+  // }
 
 }
