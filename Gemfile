@@ -49,3 +49,5 @@ gem "carrierwave"
 gem "mini_magick"
 gem 'rmagick'
 gem 'navigasmic'
+gem "friendly_id"
+gem "i18n"

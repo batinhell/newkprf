@@ -1,5 +1,7 @@
-# -*- encoding : utf-8 -*-
 Newkprf::Application.routes.draw do
+  resources :pages
+
+
   mount Ckeditor::Engine => '/ckeditor'
 
   ActiveAdmin.routes(self)
