@@ -9,7 +9,7 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
+  <% end %> 
 
   <div class="field">
     <%= f.label :title %><br />
@@ -22,6 +22,10 @@
   <div class="field">
     <%= f.label :content %><br />
     <%= f.text_area :content, :class => 'ckeditor' %>
+  </div>
+  <div class="field">
+    <%= f.label :parent_id, 'Родитель' %><br />
+    <%= f.collection_select :parent_id, Page.all, :id, :title, :include_blank => true %>
   </div>
   <div class="actions">
     <%= f.submit %>
