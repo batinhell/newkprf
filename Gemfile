@@ -5,8 +5,7 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'mysql2'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,6 +27,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
+  gem 'mysql2'
 end
 
 # To use ActiveModel has_secure_password
@@ -48,7 +48,6 @@ gem "ckeditor"
 gem "carrierwave"
 gem "mini_magick"
 gem 'rmagick'
-gem 'navigasmic'
 gem "friendly_id"
 gem "i18n"
 gem 'pg'
