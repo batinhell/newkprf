@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
@@ -51,3 +51,4 @@ gem 'rmagick'
 gem 'navigasmic'
 gem "friendly_id"
 gem "i18n"
+gem 'pg'
