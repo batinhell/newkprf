@@ -1,6 +1,0 @@
-<% @pages = Page.all %>
-<%= semantic_navigation :primary, config: :bootstrap, class: 'nav-pills' do |n| %>
-  <% @pages.each do |page| %>
-    <%= n.item page.title, "/pages/#{page.id}" %>
-  <% end %>  
-<% end %>
