@@ -1,0 +1,29 @@
+<% @main_pages = Page.where(:parent_id => nil) %>
+  <ul class="menuTop">
+    <% @main_pages.each do |main_page| %>
+      <li>
+        <%= link_to main_page.title, page_path(main_page) %>
+        <% render 'layouts/subpages', :object => main_page %>
+      </li>
+    <% end %>
+  </ul>
+<!-- <ul class="menuTop">
+  <li>
+    <a href="#">Home</a>
+    <div class="subMenu">
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+      </ul>
+    </div>
+  </li>
+  <li>
+    <a href="#">About</a>
+    <div class="subMenu">
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+      </ul>
+    </div>
+  </li>
+</ul> -->

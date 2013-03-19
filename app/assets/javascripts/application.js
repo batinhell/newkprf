@@ -21,4 +21,23 @@ $(document).ready(function(){
     autoPlay: false,
     speed: 500
   });
+
+  (function(){
+        // menu interaction
+        var $menuTop = $('ul.menuTop');
+
+        $menuTop.children('li:has(.subMenu)').mouseenter(function(){
+           // for( var key in popups )
+           //    if( popups[key].visible )
+           //       popups[key].block.stop(true).animate({top: 666 }, 333);
+           $('.subMenu', this).show();//.animate({top: 266 }, 333);
+
+        }).mouseleave(function(){
+           // for( var key in popups )
+           //    if( popups[key].visible )
+           //       popups[key].block.stop(true).animate({top: 310 }, 333);
+            $('.subMenu', this).hide();//.animate({top: 130 }, 333);
+        });
+     })();
+
 });

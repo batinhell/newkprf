@@ -4,8 +4,9 @@ body { padding-top: 30px; }
 
 .container {
   width: 980px;
-  border: 3px red;
+  border: 3px;
   margin: 0 auto;
+  background: white;
 
   .header {
     height: 100px;
@@ -13,7 +14,7 @@ body { padding-top: 30px; }
   }
 
   .row-fluid {
-    
+    z-index: 0;
     .span8 {
 
       .news {

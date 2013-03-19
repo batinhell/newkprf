@@ -3,6 +3,7 @@ ActiveAdmin.register Page do
   show do |ad|
         attributes_table do
           row :title
+          row :parent_id
           row :description
           row :content do
             sanitize(ad.content)
