@@ -201,10 +201,6 @@ DEPENDENCIES
   meta_request
   mini_magick
   mysql2
-<<<<<<< HEAD
-=======
-  navigasmic
->>>>>>> e422c6e8002b37bbaf68cf71f97e1061ddc06321
   pg
   rails (= 3.2.12)
   rmagick

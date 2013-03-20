@@ -4,12 +4,6 @@ gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-ruby '1.9.3'
-
-<<<<<<< HEAD
-
-=======
->>>>>>> e422c6e8002b37bbaf68cf71f97e1061ddc06321
 
 # Gems used only for assets and not required
 # in production environments by default.
