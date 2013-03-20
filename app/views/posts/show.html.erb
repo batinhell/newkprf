@@ -1,9 +1,11 @@
+<<<<<<< HEAD
 <p id="notice"><%= notice %></p>
 <h1><%= @post.title %></h1>
 <p>
+=======
+<div class="news">
+  <%= @post.title %>
+>>>>>>> e422c6e8002b37bbaf68cf71f97e1061ddc06321
   <%= image_tag @post.image %>
-</p>
-<p>
-  <%= sanitize(@post.description) %>
-</p>
-
+  <%= @post.description.html_safe) %>
+</div>
