@@ -10,13 +10,15 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require ckeditor/init
+
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap
-//= require jquery.Jcrop
-//= require_tree .
+//= require jquery.slidorion
+//= require ckeditor/init
+//= require jquery_ujs
+
 $(document).ready(function(){
+
   $('#slidorion').slidorion({
     effect: 'slideLeft',
     autoPlay: false,

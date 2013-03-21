@@ -1,18 +1,16 @@
-<ul>
-<% @posts.each do |post| %>
-  
-    <li>
-  <div class="row-fluid">
-    
-        <div class="news_image span4">
-        <%= image_tag post.image_url(:thumb).to_s, :class => 'img-polaroid' %>
+<div class="news">
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <div class="row-fluid">
+          <div class="news_image span4">
+            <%= image_tag post.image_url(:thumb).to_s, :class => 'img-polaroid' %>
+          </div>
+          <div class="news_title span8">
+            <%= link_to post.title, post_path(post) %>
+          </div>
         </div>
-        <div class="news_title span8">
-        <%= link_to post.title, post_path(post) %>
-        </div>
-      
-  </div>
-  </li>
-    
-<% end %>
-</ul>
+      </li>
+    <% end %>
+  </ul>
+</div>
