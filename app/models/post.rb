@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 class Post < ActiveRecord::Base
   attr_accessible :description, :title, :image, :in_slider
   mount_uploader :image, ImageUploader

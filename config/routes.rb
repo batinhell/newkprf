@@ -1,5 +1,8 @@
 Newkprf::Application.routes.draw do
   
+  resources :members
+
+
   resources :pages
 
   mount Ckeditor::Engine => '/ckeditor'
