@@ -1,5 +1,5 @@
 <div class="news">
-  <%= @post.title %
-  <%= image_tag @post.image %>
+  <%= @post.title %>
+  <%= image_tag @post.image_url(:thumb) %>
   <%= @post.description.html_safe %>
 </div>

@@ -1,3 +1,13 @@
 <h2>Обрезай и властвуй</h2>
 
 <%= image_tag @post.image_url(:large), id: "cropbox" %>
+
+<%= form_for @post do |f| %>
+  <%= %w[x y w h].each do |attribute| %>
+    <%= f.hidden_field "crop_#{atrribute}" %>
+  <% end %>
+  <div class="actions">
+    <%= f.submit "Crop" %>
+  </div>
+
+  <% end %>
