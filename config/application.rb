@@ -65,5 +65,8 @@ module Newkprf
 
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
     config.autoload_paths += %W(#{config.root}/lib/slidorion)
+
+
+    config.i18n.default_locale = :ru
   end
 end

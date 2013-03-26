@@ -29,6 +29,7 @@ ActiveAdmin.register Post do
         if params[:post][:image].present?
           render :crop, :layout => "active_admin" 
         else
+          render :layout => "active_admin"
           redirect_to @post, notice: 'Post was successfully created.'
         end
       else
@@ -42,7 +43,7 @@ ActiveAdmin.register Post do
         if params[:post][:image].present?
           render :crop, :layout => "active_admin" 
         else
-          redirect_to @post, notice: "Successfully updated post."
+          redirect_to @post, notice: 'Successfully updated post.'
         end
       else
         render :new
