@@ -7,10 +7,28 @@ body { padding-top: 30px; }
   border: 3px;
   margin: 0 auto;
   background: white;
+  .logo {
+      border-top: 1px solid #F27449;
+      height: 100px;
+      background: #000 url(/images/bg_head.png) repeat-x;
+      a {
+        background: url(/images/sitelogo.png) no-repeat;
+        display: block;
+        margin: 7px 0 0 17px;
+        width: 450px;
+        height: 83px;
+      }
+      .search {
+        float: right;
+        height: 40px;
+        margin: 20px 10px 0 0;
+      }
+    }
 
   .header {
     height: 70px;
     border-bottom: 2px red;
+
   }
 
   .row-fluid {

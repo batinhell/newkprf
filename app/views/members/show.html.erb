@@ -1,25 +1,22 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Name:</b>
-  <%= @member.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @member.description %>
-</p>
-
-<p>
-  <b>Biography:</b>
-  <%= @member.biography %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= @member.image %>
-</p>
+<div class="member_wrap row-fluid">
+  <div class="member_inner">
+    <div class="span4">
+      <div class="member_image">
+        <%= image_tag @member.image_url(:slider), :class => 'img-polaroid' %>
+      </div>
+    </div>
+      
+    <div class="span8">
+      <div class="member_name"><h1><%= @member.name %></h1></div> 
+      <div class="member_desc"><%= @member.description %></div>
+    </div>
+    
+    <div class="clearfix"></div>    
+    <div class="member_bio"><%= @member.biography.html_safe %></div>
+  </div>
+</div>
 
 
-<%= link_to 'Edit', edit_member_path(@member) %> |
-<%= link_to 'Back', members_path %>
+
+
+

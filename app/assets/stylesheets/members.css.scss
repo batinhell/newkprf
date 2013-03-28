@@ -1,6 +1,5 @@
-// Place all the styles related to the Members controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// all members in index page
+
 .members {
   font: 12px/14px "Trebuchet MS", "Times New Roman", serif;
 
@@ -15,11 +14,6 @@
     margin-right: 10px;
     min-height: 370px;
 
-
-    // .member_image {
-    //   height: 160px;
-    // }
-
     .member_name {
       margin: 10px 0;
       text-transform: uppercase;
@@ -30,6 +24,29 @@
     }
     .member_desc {
       padding: 10px 0;
+    }
+  }
+}
+
+// one member in show page
+
+.member_wrap {
+  .member_inner {
+    padding: 15px;
+
+    .member_image {
+      margin-right: 10px;
+    }
+    .member_name {
+      font-size: 40px;
+    }
+
+    .member_desc {
+      font-style: italic;
+      font-size: 14px;
+    }
+    .member_bio {
+      margin-top: 20px;
     }
   }
 }

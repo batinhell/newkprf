@@ -36,7 +36,13 @@ ul {
 */
 
 .navbar {
-  
+  .navbar-inner {
+    .search {
+      height: 30px;
+      margin: 5px auto;
+      float: right;
+    }
+  }
 }
 
 .menuTop > li {
