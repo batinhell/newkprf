@@ -15,8 +15,14 @@
     <div class="member_bio"><%= @member.biography.html_safe %></div>
   </div>
 </div>
-
-
+<% if @related_news %>
+  <div class="related">
+    <h3>Новости по теме</h3>
+    <% @related_news.each do |post| %>
+      <div class="related_title"><%= link_to post.title, post_path(post) %></div>   
+    <% end %>
+  </div>
+<% end %>
 
 
 

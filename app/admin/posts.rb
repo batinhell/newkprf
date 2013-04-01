@@ -10,6 +10,7 @@ ActiveAdmin.register Post do
           row :image do
             image_tag(ad.image_url(:thumb))
           end
+          row :member_id
         end
   end
 
