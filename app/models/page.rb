@@ -1,5 +1,5 @@
 class Page < ActiveRecord::Base
-  extend FriendlyId
+  extend FriendlyId 
   friendly_id :title, use: :slugged
   attr_accessible :content, :title, :description, :parent_id, :url
   validates_presence_of :title, :content, :description

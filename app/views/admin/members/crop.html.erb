@@ -1,0 +1,13 @@
+<h2>Обрезай и властвуй</h2>
+
+<%= image_tag @member.image_url(:large), id: "cropbox" %>
+
+<%= semantic_form_for [:admin, @member] do |f| %>
+  <% %w[x y w h].each do |attribute| %>
+    <%= f.text_field "crop_#{attribute}" %>
+  <% end %>
+  <div class="actions">
+    <%= f.submit "Crop" %>
+  </div>
+
+  <% end %>

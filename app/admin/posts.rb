@@ -8,20 +8,25 @@ ActiveAdmin.register Post do
             sanitize(ad.description)
           end
           row :image do
-            image_tag(ad.image_url(:thumb))
+            image_tag(ad.image_url(:thumb).to_s)
           end
-          row :member_id
+          row :member_id do
+            link_to ad.members.name, admin_member_path(ad.members)
+          end
         end
   end
 
   index do
-    column :title
-    column :image do |post|
-      image_tag(post.image_url(:slider))
+    column :title do |post|
+      link_to post.title, admin_post_path(post)
     end
+    
     default_actions
   end
 
+  filter :title
+  filter :in_slider
+  filter :members
 
   controller do
     def create
@@ -30,8 +35,7 @@ ActiveAdmin.register Post do
         if params[:post][:image].present?
           render :crop, :layout => "active_admin" 
         else
-          render :layout => "active_admin"
-          redirect_to @post, notice: 'Post was successfully created.'
+          redirect_to [:admin, @post], notice: 'Post was successfully created.'
         end
       else
         render :new
@@ -44,7 +48,7 @@ ActiveAdmin.register Post do
         if params[:post][:image].present?
           render :crop, :layout => "active_admin" 
         else
-          redirect_to @post, notice: 'Successfully updated post.'
+          redirect_to [:admin, @post], notice: 'Successfully updated post.'
         end
       else
         render :new
