@@ -1,0 +1,16 @@
+<div class="agits">
+  <ul>
+    <% @agits.each do |agit| %>
+      <li>
+        <div class="row-fluid">
+          <div class="agit_name span4">
+            <%= agit.name %>
+          </div>
+          <div class="agit_link span8">
+            <%= link_to "Скачать", agit.image.url %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

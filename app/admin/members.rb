@@ -27,32 +27,6 @@ ActiveAdmin.register Member do
 
   filter :name
 
-  controller do
-    def create
-      @member = Member.new(params[:member])
-      if @member.save
-        if params[:member][:image].present?
-          render :crop, :layout => "active_admin" 
-        else
-          redirect_to [:admin, @member], notice: 'Post was successfully created.'
-        end
-      else
-        render :new
-      end
-    end
-
-    def update
-      @member = Member.find(params[:id])
-      if @member.update_attributes(params[:member])
-        if params[:member][:image].present?
-          render :crop, :layout => "active_admin" 
-        else
-          redirect_to [:admin, @member], notice: 'Successfully updated post.'
-        end
-      else
-        render :new
-      end
-    end
-  end
+  
 
 end

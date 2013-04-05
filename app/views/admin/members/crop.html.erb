@@ -6,8 +6,8 @@
   <% %w[x y w h].each do |attribute| %>
     <%= f.text_field "crop_#{attribute}" %>
   <% end %>
+  <%= f.input :name, :as => :hidden, :wrapper_html => { :class => "model", :id => 'member' }  %>
   <div class="actions">
     <%= f.submit "Crop" %>
   </div>
-
-  <% end %>
+<% end %>

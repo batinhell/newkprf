@@ -25,7 +25,15 @@
     </div>
     <div class="field">
       <%= f.label :member_id, 'Выберите депутата если нужно' %><br />
-      <%= f.select :member_id, options_from_collection_for_select(Member.all, :id, :name) %>
+      <%= f.select :member_id, options_from_collection_for_select(Member.all, :id, :name), { :include_blank => true } %>
+    </div>
+    <div class="field">
+      <%= f.label :ruso %><br />
+      <%= f.check_box :ruso %>
+    </div>
+        <div class="field">
+      <%= f.label :rus_lad %><br />
+      <%= f.check_box :rus_lad %>
     </div>
     
    <br>

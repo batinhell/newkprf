@@ -1,5 +1,8 @@
 Newkprf::Application.routes.draw do
   
+  resources :agits
+
+
   resources :members
 
 

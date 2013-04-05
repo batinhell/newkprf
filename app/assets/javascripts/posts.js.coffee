@@ -8,7 +8,7 @@ class AvatarCropper
       setSelect: [0, 0, 600, 600]
       onSelect: @update
       onChange: @update
-  
+  model = $('.model').attr('id')
   update: (coords) =>
     $('#post_crop_x').val(coords.x)
     $('#post_crop_y').val(coords.y)

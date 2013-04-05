@@ -1,8 +1,9 @@
-<div class="member_wrap row-fluid">
+<div class="member_wrap row-fluid"> 
   <div class="member_inner">
     <div class="span4">
       <div class="member_image">
         <%= image_tag @member.image_url(:slider), :class => 'img-polaroid' %>
+        <%= link_to "Скачать", @member.image.url %>
       </div>
     </div>
       

@@ -5,14 +5,16 @@ ActiveAdmin.register Post do
           row :title
           row :in_slider
           row :description do
-            sanitize(ad.description)
+            sanitize(ad.description) 
           end
           row :image do
             image_tag(ad.image_url(:thumb).to_s)
           end
           row :member_id do
-            link_to ad.members.name, admin_member_path(ad.members)
+            link_to ad.members.name, admin_member_path(ad.members) if ad.members.present?
           end
+          row :ruso
+          row :rus_lad
         end
   end
 
