@@ -95,9 +95,9 @@ ActiveRecord::Schema.define(:version => 20130405083944) do
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "description"
+    t.string   "image_url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
-    t.string   "image"
     t.boolean  "in_slider"
     t.integer  "member_id"
     t.string   "slug"

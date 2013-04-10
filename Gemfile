@@ -19,7 +19,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'activeadmin', github: 'Daxter/active_admin', branch: 'bugfix/1773-execjs'
+gem 'activeadmin' #, github: 'Daxter/active_admin', branch: 'bugfix/1773-execjs'
 
 group :development do
   gem 'better_errors'
