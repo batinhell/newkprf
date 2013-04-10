@@ -15,7 +15,7 @@
             <div class="subMenu">
               <ul>
                 <% @subpages.each do |subpage| %>
-                <li><%= link_to subpage.title, page_path(subpage) %></li>
+                <li><%= link_to subpage.title, "#{root_url}#{subpage.url}" %></li>
                 <% end %>
               </ul>
             </div>

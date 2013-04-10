@@ -1,0 +1,15 @@
+<div class="albums">
+  <h1>Список фотогалерей</h1>
+
+  <ul>
+    <% @albums.each do |album| %>
+      <li>
+        <div><%= link_to album.name, album_path(album) %></div>
+        <div><%= link_to(image_tag(album.photos.first.image.thumb.url), album_path(album)) %></div>
+      </li>
+    <% end %>
+  </ul>
+  
+</div>
+
+

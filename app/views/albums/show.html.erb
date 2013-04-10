@@ -1,0 +1,9 @@
+<div class="photos">
+  <h2><%= @album.name %></h2>
+  <p><%= @album.description %></p>
+  <% @photos.each do |photo| %>
+    <%= image_tag photo.image.thumb.url %>
+  <% end %>
+</div>
+
+

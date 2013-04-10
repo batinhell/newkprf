@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130405083944) do
+ActiveRecord::Schema.define(:version => 20130410083826) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -54,6 +54,13 @@ ActiveRecord::Schema.define(:version => 20130405083944) do
     t.datetime "updated_at",  :null => false
   end
 
+  create_table "albums", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
     t.string   "data_content_type"
@@ -92,17 +99,70 @@ ActiveRecord::Schema.define(:version => 20130405083944) do
 
   add_index "pages", ["slug"], :name => "index_pages_on_slug"
 
+  create_table "photos", :force => true do |t|
+    t.text     "description"
+    t.string   "image"
+    t.integer  "album_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "description"
-    t.string   "image_url"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+    t.string   "image"
     t.boolean  "in_slider"
     t.integer  "member_id"
     t.string   "slug"
     t.boolean  "ruso"
     t.boolean  "rus_lad"
+  end
+
+  create_table "spud_photo_albums", :force => true do |t|
+    t.string   "title"
+    t.string   "url_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "spud_photo_albums", ["url_name"], :name => "idx_album_url_name"
+
+  create_table "spud_photo_albums_photos", :force => true do |t|
+    t.integer "spud_photo_album_id"
+    t.integer "spud_photo_id"
+    t.integer "sort_order",          :default => 0
+  end
+
+  add_index "spud_photo_albums_photos", ["spud_photo_album_id"], :name => "idx_album_id"
+
+  create_table "spud_photo_galleries", :force => true do |t|
+    t.string   "title"
+    t.string   "url_name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "spud_photo_galleries", ["url_name"], :name => "idx_gallery_url_name"
+
+  create_table "spud_photo_galleries_albums", :force => true do |t|
+    t.integer "spud_photo_gallery_id"
+    t.integer "spud_photo_album_id"
+    t.integer "sort_order",            :default => 0
+  end
+
+  add_index "spud_photo_galleries_albums", ["spud_photo_gallery_id"], :name => "idx_gallery_id"
+
+  create_table "spud_photos", :force => true do |t|
+    t.string   "title"
+    t.string   "caption"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
 
 end

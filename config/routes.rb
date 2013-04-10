@@ -1,5 +1,13 @@
 Newkprf::Application.routes.draw do
   
+  
+
+
+  resources :albums do
+    resources :photos
+  end
+
+
   resources :agits
 
 
