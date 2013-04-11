@@ -2,6 +2,10 @@
 body { padding-top: 30px; }
 @import "bootstrap-responsive";
 
+.carousel-caption {
+  color: #ffffff;
+}
+
 .container {
   width: 980px;
   border: 3px;
@@ -26,7 +30,6 @@ body { padding-top: 30px; }
     }
 
   .header {
-    height: 70px;
     border-bottom: 2px red;
 
   }
@@ -70,7 +73,7 @@ body { padding-top: 30px; }
 
     .info {
       padding: 15px;
-      background: #000 url("https://locomotivehosting.s3.amazonaws.com/sites/4c34fc86cc85f01e47000005/theme/images/bg.png") repeat 0 0;
+      //background: #000 url("https://locomotivehosting.s3.amazonaws.com/sites/4c34fc86cc85f01e47000005/theme/images/bg.png") repeat 0 0;
       color: #999;
     }
   }

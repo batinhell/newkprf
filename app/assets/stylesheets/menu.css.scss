@@ -37,10 +37,13 @@ ul {
 
 .navbar {
   .navbar-inner {
+    // height: 25px;
+    // background: url('/images/bg05.gif') repeat-x 0 0;
+    // background: #232323;
     .search {
-      height: 30px;
-      margin: 5px auto;
-      float: right;
+      // height: 30px;
+      // margin: 5px auto;
+      // float: right;
     }
   }
 }
@@ -96,3 +99,7 @@ ul {
 .menuTop li a:hover {
     color: black;
 }
+
+.navbar .nav  > li > a {
+  padding: 10 15px 0px;
+} 

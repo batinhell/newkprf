@@ -3,6 +3,9 @@ Newkprf::Application.routes.draw do
   
 
 
+  resources :videos
+
+
   resources :albums do
     resources :photos
   end

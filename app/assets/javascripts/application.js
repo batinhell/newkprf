@@ -20,8 +20,8 @@
 $(document).ready(function(){
 
   $('#slidorion').slidorion({
-    effect: 'slideLeft',
-    autoPlay: false,
+    effect: 'slideUp',
+    autoPlay: true,
     speed: 500
   });
 

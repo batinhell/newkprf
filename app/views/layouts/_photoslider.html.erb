@@ -6,14 +6,12 @@
   </ol>
   <!-- Carousel items -->
   <div class="carousel-inner">
-    <div class="active item">
-      <img src="/images/8.jpg">
-      <div class="carousel-caption">Description for first image</div>
-    </div>
-    <div class="item"><img src="/images/8.jpg"></div>
-    <div class="item"><img src="/images/8.jpg"></div>
+    <% $i = true %>
+    <% @albums = Album.limit(3).each do |album| %>
+      <div class="<%= $i == true ? "active item" : "item" %>"><img src="<%= album.photos.first.image.slider.url %>">
+        <div class="carousel-caption"><%= album.name %></div>
+      </div>
+    <% $i = false %>
+    <% end %>
   </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>

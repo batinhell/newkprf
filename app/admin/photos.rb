@@ -1,3 +1,3 @@
 ActiveAdmin.register Photo do
-  belongs_to :album
+  # belongs_to :album
 end
