@@ -2,7 +2,7 @@
   <div id="slider">
     <% @slider.each do |post| %>
     <div class="slide">
-      <%= image_tag post.image_url(:slider).to_s, :class => 'img-polaroid' %>
+      <%= image_tag post.image_url(:slider).to_s %>
     </div>
     <% end %>
   </div>

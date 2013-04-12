@@ -2,10 +2,10 @@
 #slidorion {
 	z-index: 0;
 	width: 624px;			/* Set to slidorion width. Is equal to #slider + #accordion width */
-	height: 220px;			/* Set to slidorion height. Is equal to #slider and #accordion height */
+	height: 200px;			/* Set to slidorion height. Is equal to #slider and #accordion height */
 	/*position: relative;*/
 	/*left: 50%;*/
-	/*margin-left: -456px;*/
+	/*margin-left: -456px;*/ 
 	padding: 10px;
 	/*background: #cbcbcb;*/
 	border: 1px solid #bbb;
@@ -16,7 +16,7 @@
 
 #slider {
 	z-index: 0;
-	width: 315px;			/* Set to slider width */
+	width: 301px;			/* Set to slider width */
 	height: 212px;			/* Set to slider height */
 	position: relative;
 	float: left;

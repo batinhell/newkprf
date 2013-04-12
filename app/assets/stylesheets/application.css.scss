@@ -17,6 +17,23 @@
  */
 
 // @import "bootstrap";
+
+
+// slidorion
+
+#slidorion {
+  border: none;
+  box-shadow: none;
+}
+
+#slider {
+  height: 200px;
+}
+
+#accordion {
+  height: 200px;
+}
+
 .content {
   background-color: #eee;
   padding: 20px;
@@ -33,8 +50,14 @@ body {
   padding: 10px;
 }
 
+a {
+  color: #545454;
+}
 
-
+a:hover {
+  text-decoration: underline;
+  color: #545454;
+}
 .container {
   //background-color: white;
 

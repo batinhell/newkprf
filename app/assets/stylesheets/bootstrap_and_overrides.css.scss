@@ -6,6 +6,10 @@ body { padding-top: 30px; }
   color: #ffffff;
 }
 
+.navbar-search {
+  margin-top: 10px;
+}
+
 .container {
   width: 980px;
   border: 3px;
@@ -40,7 +44,12 @@ body { padding-top: 30px; }
 
       .news {
         margin-top: 30px;
-        //background-color: #eee;
+        padding-left: 5px;
+        #news_title {
+          color: #545454;
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
 
         ul {
           overflow:hidden;
@@ -62,6 +71,21 @@ body { padding-top: 30px; }
     }
 
     .span4 {
+
+      .video {
+        #v_title {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .photo-slider{
+        #ph_title {
+          margin-bottom: 10px;
+          font-size: 20px;
+        }
+      }
+
       .banners {
         margin: 30px 0;
       }
@@ -73,8 +97,10 @@ body { padding-top: 30px; }
 
     .info {
       padding: 15px;
-      //background: #000 url("https://locomotivehosting.s3.amazonaws.com/sites/4c34fc86cc85f01e47000005/theme/images/bg.png") repeat 0 0;
+      background: #000 url("https://locomotivehosting.s3.amazonaws.com/sites/4c34fc86cc85f01e47000005/theme/images/bg.png") repeat 0 0;
       color: #999;
     }
   }
 }
+
+
