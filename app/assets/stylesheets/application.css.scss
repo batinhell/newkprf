@@ -14,12 +14,18 @@
  *= require members
  *= require menu
  *= require slidorion
+ *= require posts
  */
 
 // @import "bootstrap";
 
 
 // slidorion
+
+h1  {
+  font: bold 32px/35px "Trebuchet MS", "Times New Roman", serif;
+  color: #000000;
+}
 
 #slidorion {
   border: none;
@@ -43,7 +49,8 @@
 }
 
 body {
-  background: #000 url("http://cs1.kprf.ru/themes/dv/images/bg.png") repeat 0 0;
+  // background: #000 url("http://cs1.kprf.ru/themes/dv/images/bg.png") repeat 0 0;
+  background: #ffffff url('/images/bg01.jpg') no-repeat center 0; 
 }
 
 .pages {
@@ -60,6 +67,11 @@ a:hover {
 }
 .container {
   //background-color: white;
+
+  border: 1px solid #bbb;
+  -webkit-box-shadow: 0 0 34px #bbb;
+  -moz-box-shadow: 0 0 34px #bbb;
+  box-shadow: 0 0 34px #bbb;
 
   .header {
     height: 65px;

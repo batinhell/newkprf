@@ -1,18 +1,15 @@
-<div class="news">
-  <h2>Последние новости</h2>
-  <ul>
+<ul class="news-list">
+  <ul class="list">
     <% @posts.each do |post| %>
-      <li>
-        <div class="row-fluid">
-          <div class="news_image span4">
-            <%= image_tag post.image_url(:thumb).to_s, :class => 'img-polaroid' %>
-          </div>
-          <div class="news_title span8">
-            <%= link_to post.title, post_path(post) %>
-          </div>
-        </div>
-        <hr>
-      </li>
+    <li class="post">
+      <div class="news-image"><a href="<%= post_path(post) %>"><img src="<%= post.image.thumb.url %>"></a></div>
+      <div class="wrap">
+        <div class="title"><a href="<%= post_path(post) %>"><%= post.title %></a> </div>
+        <div class="desc"><%= truncate(post.description.strip_tags, :length => 180, :separator => ' ') %></div>
+      </div>
+    </li>
+    <hr>
     <% end %>
   </ul>
-</div>
+</ul>
+<%= paginate @posts %>

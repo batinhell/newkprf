@@ -1,4 +1,5 @@
 ActiveAdmin.register Post do
+  config.per_page = 2
   form :partial => "form"
   show do |ad|
         attributes_table do

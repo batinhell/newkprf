@@ -14,4 +14,5 @@ class Post < ActiveRecord::Base
     image.recreate_versions! if crop_x.present?
   end
 
+
 end

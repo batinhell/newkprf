@@ -1,5 +1,6 @@
-<div class="news">
-  <%= @post.title %>
-  <%= image_tag @post.image_url(:thumb) %>
-  <%= @post.description.html_safe %>
+<div class="news-one">
+  <div class="date"><%= l @post.created_at.strftime('%d/ %B/ %Y').to_date  %></div>
+  <div class="title"><h1><%= @post.title %></h1></div> 
+  <div class="image"><%= image_tag @post.image_url(:large) %></div> 
+  <div class="desc"><%= @post.description.html_safe %></div>
 </div>

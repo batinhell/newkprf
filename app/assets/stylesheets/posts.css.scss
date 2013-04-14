@@ -1,3 +1,48 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ul.news-list {
+  margin-top: 20px;
+  .list {
+    margin-left: 0;
+    li.post {
+      height: 100px;
+      margin-bottom: 20px;
+      .news-image {
+        float:left;
+      }
+      .wrap {
+        padding-left: 120px;
+        .title {
+          a {
+            text-decoration: underline;
+            color: #4d6b8d;
+            font-size: 17px;
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        .desc {
+          padding-top: 15px;
+          font-size: 12px;
+          color: #545454;
+        }
+      }
+    }
+  }
+}
+
+.news-one {
+  padding-left: 20px;
+  .image {
+    margin-bottom: 20px;  
+  }
+
+  .date {
+    margin-bottom: 22px;
+    font-size: 12px;
+    color: rgb(194, 38, 38);
+    font-style: italic;
+  }
+}
