@@ -1,5 +1,5 @@
 
-# require "rvm/capistrano"
+require "rvm/capistrano"
 
 
 
