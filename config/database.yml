@@ -8,8 +8,8 @@ production:
   host: localhost
   encoding: utf8
   database: newkprf
-  user: root
-  password: rjvbccfh
+  user: kprf
+  password: "880524"
 # development:
 #   adapter: sqlite3
 #   database: db/test.sqlite3
