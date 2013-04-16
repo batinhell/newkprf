@@ -1,5 +1,10 @@
-set :rvm_type, :user  # Literal ":user"
+$:.unshift(File.expand_path('./lib', ENV['rvm_path']))
+
 require "rvm/capistrano"
+
+set :rvm_ruby_string, '1.9.3'
+set :rvm_type, :user  # Literal ":user"
+
 set :bundle_cmd, "/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global/bin/bundle"
 set :bundle_dir, "home/kprf/data/.rvm/gems/ruby-1.9.3-p392"
 require "bundler/capistrano"
