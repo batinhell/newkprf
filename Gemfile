@@ -52,4 +52,4 @@ gem "friendly_id"
 gem "i18n"
 gem 'russian', '~> 0.6.0'
 gem "nested_form"
-#gem "rvm-capistrano"
+gem "rvm-capistrano"
