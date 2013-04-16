@@ -1,4 +1,4 @@
-set :rvm_type, :kprf  # Literal ":user"
+set :rvm_type, :user  # Literal ":user"
 require "rvm/capistrano"
 set :bundle_cmd, "/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global/bin/bundle"
 set :bundle_dir, "home/kprf/data/.rvm/gems/ruby-1.9.3-p392"
