@@ -6,8 +6,8 @@ require "rvm/capistrano"
 set :default_environment, {
   'PATH' => "/home/kprf/data/.rvm/gems/ruby-1.9.3-p392/bin:/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global/bin:/home/kprf/data/.rvm/rubies/ruby-1.9.3-p392/bin:/home/kprf/data/.rvm/bin:$PATH",
   'RUBY_VERSION' => 'ruby 1.9.3',
-  'GEM_HOME'     => '/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global',
-  'GEM_PATH'     => '/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global',
+  'GEM_HOME'     => '/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@newkprf',
+  'GEM_PATH'     => '/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@newkprf',
   #'BUNDLE_PATH'  => '/home/kprf/data/.rvm/gems/ruby-1.9.3-p392'  # If you are using bundler.
 }
 
