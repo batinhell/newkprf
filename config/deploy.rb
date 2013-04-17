@@ -1,4 +1,6 @@
 #require "rvm/capistrano"
+set :bundle_cmd, "/home/kprf/data/.rvm/gems/ruby-1.9.3-p392@global/bin/bundle"
+set :bundle_dir, "home/kprf/data/.rvm/gems/ruby-1.9.3-p392"
 require "bundler/capistrano"
 
 server "77.246.150.198", :web, :app, :db, primary: true
