@@ -1,9 +1,9 @@
-require "rvm/capistrano"
+#require "rvm/capistrano"
 require "bundler/capistrano"
 
 server "77.246.150.198", :web, :app, :db, primary: true
-set :rvm_path, "$HOME/.rvm/bin/rvm"
-set :rvm_bin_path, "$HOME/.rvm/bin"
+#set :rvm_path, "$HOME/.rvm/bin"
+#set :rvm_bin_path, "$HOME/.rvm/bin"
 set :application, "kprf-arh.ru"
 set :user, "kprf"
 set :deploy_to, "/home/#{user}/data/www/#{application}"
