@@ -26,12 +26,10 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'sqlite3'
-  gem 'mysql2'
 end
 
 group :production do
-  gem 'pg'
-  gem 'unicorn'
+  gem 'mysql2'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,19 +38,17 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
 gem "ckeditor"
 gem "carrierwave"
 gem "mini_magick"
-gem 'rmagick'
 gem "friendly_id"
 gem "i18n"
-gem 'pg'
 gem 'russian', '~> 0.6.0'
 gem "nested_form"
