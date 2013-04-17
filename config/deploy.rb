@@ -3,6 +3,7 @@ require "bundler/capistrano"
 
 server "77.246.150.198", :web, :app, :db, primary: true
 
+set :rvm_bin_path, "$HOME/.rvm/bin"
 set :application, "kprf-arh.ru"
 set :user, "kprf"
 set :deploy_to, "/home/#{user}/data/www/#{application}"
