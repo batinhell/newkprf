@@ -33,6 +33,6 @@ development:
   adapter: mysql2
   host: localhost
   encoding: utf8
-  database: newkprf
+  database: kprf
   user: root
-  password: rjvbccfh
+  password: kprf-arh
