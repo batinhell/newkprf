@@ -7,9 +7,9 @@ production:
   adapter: mysql2
   host: localhost
   encoding: utf8
-  database: newkprf
-  user: kprf
-  password: "880524"
+  database: kprf
+  user: root
+  password: kprf-arh
 # development:
 #   adapter: sqlite3
 #   database: db/test.sqlite3
