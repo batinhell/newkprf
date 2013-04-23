@@ -1,3 +1,35 @@
-// Place all the styles related to the Albums controller here.
+// Place all the styles related to the Photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+ul.albums-list {
+  margin-top: 20px;
+  .list {
+    margin-left: 0;
+    li.album {
+      height: 200px;
+      margin-bottom: 20px;
+      .album-image {
+        float:left;
+        //width: 210px;
+      }
+      .wrap {
+        padding-left: 210px;
+        .title {
+          a {
+            text-decoration: underline;
+            color: #4d6b8d;
+            font-size: 17px; 
+          }
+          a:hover {
+            text-decoration: none;
+          }
+        }
+        .desc {
+          padding-top: 15px;
+          font-size: 12px;
+          color: #545454;
+        }
+      }
+    }
+  }
+}

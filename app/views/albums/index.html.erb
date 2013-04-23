@@ -1,15 +1,16 @@
-<div class="albums">
-  <h1>Список фотогалерей</h1>
-
-  <ul>
+<ul class="albums-list">
+  <ul class="list">
     <% @albums.each do |album| %>
-      <li>
-        <div><%= link_to album.name, album_path(album) %></div>
-        <div><%= link_to(image_tag(album.photos.first.image.thumb.url), album_path(album)) %></div>
-      </li>
+    <li class="album">
+      <div class="album-image"><a href="<%= album_path(album) %>"><img src="<%= album.photos.first.image.thumb.url %>"></a></div>
+      <div class="wrap">
+        <div class="title"><a href="<%= album_path(album) %>"><%= album.name %></a> </div>
+        <div class="desc"><%= truncate(album.description.strip_tags, :length => 180, :separator => ' ') %></div>
+      </div>
+    </li>
+    <hr>
     <% end %>
   </ul>
-  
-</div>
+</ul>
 
 

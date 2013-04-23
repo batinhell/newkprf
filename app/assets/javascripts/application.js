@@ -16,6 +16,7 @@
 //= require jquery.slidorion
 //= require ckeditor/init
 //= require jquery_ujs
+//= require lightbox
 
 $(document).ready(function(){
 

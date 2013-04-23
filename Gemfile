@@ -47,6 +47,7 @@ gem 'capistrano'
 gem "ckeditor"
 gem "carrierwave"
 gem "mini_magick"
+gem "rmagick"
 gem "friendly_id"
 gem "i18n"
 gem 'russian', '~> 0.6.0'
