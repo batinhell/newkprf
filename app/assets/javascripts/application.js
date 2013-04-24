@@ -12,4 +12,30 @@
 //
 
 //= require jquery
+//= require bootstrap
+//= require jquery.slidorion
+//= require ckeditor/init
+//= require jquery_ujs
 //= require lightbox
+
+$(document).ready(function(){
+
+  $('#slidorion').slidorion({
+    effect: 'slideUp',
+    autoPlay: true,
+    speed: 500
+  });
+
+  (function(){
+        // menu interaction
+        var $menuTop = $('ul.menuTop');
+
+        $menuTop.children('li:has(.subMenu)').mouseenter(function(){
+           $('.subMenu', this).show();
+
+        }).mouseleave(function(){
+            $('.subMenu', this).hide();
+        });
+     })();
+
+});
