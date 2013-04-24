@@ -1,5 +1,4 @@
 <% @video = Video.last %>
-<div id="v_title"><%= link_to "Видео", videos_path %></div> 
 <iframe width="300" height="245" src="<%= @video.url %>" frameborder="0" allowfullscreen>
 </iframe>
 <div class="title"><%= @video.name %></div>

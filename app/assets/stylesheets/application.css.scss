@@ -16,13 +16,17 @@
  *= require slidorion
  *= require posts
  *= require albums
- *= require lightbox
+ *= require colorbox-rails
  */
 
 // @import "bootstrap";
 
 
 // slidorion
+
+iframe {
+  z-index: 0;
+}
 
 h1  {
   font: bold 32px/35px "Trebuchet MS", "Times New Roman", serif;
