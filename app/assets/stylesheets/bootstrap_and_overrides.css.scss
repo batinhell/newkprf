@@ -16,11 +16,43 @@ body { padding-top: 30px; }
   margin: 0 auto;
   background: white;
   .logo {
+      position: relative;
+      ul.links {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        li {
+          float: left;
+          margin-right: 10px;
+          a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -999px;
+            overflow: hidden;
+          }
+          .kprf {
+            width: 60px;
+            background: url('/images/kprf.png') no-repeat 0 0;
+          }
+          .rss {
+            background: url('/images/rss.png') no-repeat 0 0;
+          }
+          .you {
+            width: 60px;
+            background: url('/images/you.png') no-repeat 0 0;
+          }
+          .vk {
+            background: url('/images/vk.png') no-repeat 0 0;
+          }
+        }
+      }
+
       border-top: 1px solid #F27449;
       height: 100px;
-      background: #000 url(/images/bg_head.png) repeat-x;
+      background: #000 url(/images/shapka.jpg) repeat-x;
       a {
-        background: url(/images/sitelogo.png) no-repeat;
+        //background: url(/images/sitelogo.png) no-repeat;
         display: block;
         margin: 7px 0 0 17px;
         width: 450px;

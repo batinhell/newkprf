@@ -2,16 +2,19 @@
 
 .members {
   font: 12px/14px "Trebuchet MS", "Times New Roman", serif;
+  padding-left: 30px;
 
   h2 {
-    margin-left: 10px;
+    //padding-left: 30px;
   }
   .member {
-    width: 160px;
-    padding: 15px;
-    display: inline-block;
+    width: 180px;
+    //padding: 10px;
+    //display: inline-block;
+    float: left;
     margin-bottom: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
+    //padding-right: 10px;
     // min-height: 370px;
 
     .member_name {
