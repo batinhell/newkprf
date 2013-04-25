@@ -23,10 +23,15 @@
     <%= f.label :biography %><br />
     <%= f.text_area :biography, :class => 'ckeditor' %>
   </div>
+    <div class="field">
+    <%= f.label :department_id %><br />
+    <%= f.collection_select :department_id, Department.all, :id, :name %>
+  </div>
   <div class="field">
     <%= f.label :image %><br />
     <%= f.file_field :image %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

@@ -1,15 +1,18 @@
-<div class="members">
-  <h2>Список депутатов</h2>
-  <% @members.each do |member| %>
-    <div class="member">
-     <div class="member_image">
-      <%= link_to(image_tag(member.image_url(:slider), :class=>'img-polaroid'), member_path(member)) %>
-     </div> 
-      <div class="member_name"><b><%= link_to member.name, member_path(member) %></b></div> 
-      <div class="member_desc"><%= member.description %></div>
+<div class="deputats">
+  <% @departments.each do |department| %>
+    <h3><%= department.name %></h3>
+    <div class="members">
+      <% department.members.each do |member|  %>
+        <div class="member">
+          <div class="member_image">
+            <%= link_to(image_tag(member.image_url(:slider), :class=>'img-polaroid'), member_path(member)) %>
+          </div> 
+          <div class="member_name"><b><%= link_to member.name, member_path(member) %></b></div> 
+          <div class="member_desc"><%= member.description %></div>
+        </div>
+      <% end %>
+      <div class="clearfix"></div> 
     </div>
   <% end %>
-<div class="clearfix"></div> 
 </div>
-
 

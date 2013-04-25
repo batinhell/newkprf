@@ -1,11 +1,6 @@
 <% @main_pages = Page.where(:parent_id => nil) %> 
 <div class="navbar">
   <div class="navbar-inner">
-    <div class="search">
-      <form class="navbar-search pull-right">
-        <input type="text" class="search-query" placeholder="Search">
-      </form>
-    </div>
     <ul class="menuTop nav">
       <% @main_pages.each do |main_page| %>
         <li>

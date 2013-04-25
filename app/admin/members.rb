@@ -11,6 +11,9 @@ ActiveAdmin.register Member do
       row :biography do
         ad.biography.html_safe
       end
+      row :department_id do
+        ad.department.name
+      end
     end
   end
 

@@ -1,5 +1,9 @@
 // all members in index page
-
+.deputats {
+  h3 {
+    padding-left: 30px;
+  }
+}
 .members {
   font: 12px/14px "Trebuchet MS", "Times New Roman", serif;
   padding-left: 30px;
@@ -35,7 +39,7 @@
 
 .member_wrap {
   .member_inner {
-    padding: 15px;
+    padding: 10px 30px 30px 30px;
 
     .member_image {
       margin-right: 10px;
@@ -52,4 +56,8 @@
       margin-top: 20px;
     }
   }
+}
+
+.related {
+  padding-left: 30px;
 }

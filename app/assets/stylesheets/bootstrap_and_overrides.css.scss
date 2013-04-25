@@ -17,30 +17,58 @@ body { padding-top: 30px; }
   background: white;
   .logo {
       position: relative;
+      .search {
+        position: absolute;
+        top: 40px;
+        right: 10px;
+        margin: 20px 10px 0 0;
+
+        input[type="text"] {
+          font-size: 12px;
+          width: 142px;
+          border: 0 none;
+          background: none;
+          color: white;
+        }
+
+        input[type="submit"] {
+          width: 35px;
+          height: 28px;
+          text-indent: -999px;
+          overflow: hidden;
+          cursor: pointer;
+          border: 0 none;
+          background: url('/images/search.png')
+        }
+      }
       ul.links {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 30px;
         li {
           float: left;
-          margin-right: 10px;
+          margin-right: 0px;
+
           a {
             display: block;
             width: 30px;
             height: 30px;
             text-indent: -999px;
             overflow: hidden;
+            margin: 0;
           }
           .kprf {
-            width: 60px;
+            width: 65px;
             background: url('/images/kprf.png') no-repeat 0 0;
           }
           .rss {
+            width: 27px;
             background: url('/images/rss.png') no-repeat 0 0;
           }
           .you {
             width: 60px;
             background: url('/images/you.png') no-repeat 0 0;
+            height: 30px;
           }
           .vk {
             background: url('/images/vk.png') no-repeat 0 0;
@@ -58,11 +86,6 @@ body { padding-top: 30px; }
         width: 450px;
         height: 83px;
       }
-      .search {
-        float: right;
-        height: 40px;
-        margin: 20px 10px 0 0;
-      }
     }
 
   .header {
@@ -77,6 +100,7 @@ body { padding-top: 30px; }
       .news {
         margin-top: 10px;
         padding-left: 15px;
+        padding-right: 15px;
         #news_title {
           color: #545454;
           font-size: 20px;
@@ -88,10 +112,8 @@ body { padding-top: 30px; }
           margin: 0;
         
           li {
-            width: 50%;
-            margin-bottom: 10px;
+            width: 46%;
             float:left;
-            display:inline;
 
             .news_title {
               padding-left: 10px;
@@ -103,7 +125,7 @@ body { padding-top: 30px; }
     }
 
     .span4 {
-
+      margin: 0;
       .video {
         padding-top: 15px;
         #v_title {

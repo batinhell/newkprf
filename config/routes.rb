@@ -1,6 +1,9 @@
 Newkprf::Application.routes.draw do
   
   
+  resources :departments
+
+
   root :to => 'site#index'
 
   resources :videos

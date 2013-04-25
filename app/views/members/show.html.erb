@@ -2,8 +2,7 @@
   <div class="member_inner">
     <div class="span4">
       <div class="member_image">
-        <%= image_tag @member.image_url(:slider), :class => 'img-polaroid' %>
-        <%= link_to "Скачать", @member.image.url %>
+        <%= image_tag @member.image_url(:slider), :class => 'img-polaroid', :data => { :colorbox => true } %>
       </div>
     </div>
       
