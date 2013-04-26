@@ -15,6 +15,10 @@ class ImageUploader < CarrierWave::Uploader::Base
     resize_to_fill(300, 200)
   end
 
+  version :member do
+    resize_to_fill(200, 300)
+  end
+
   version :thumb do
     process :crop
     resize_to_fill(100, 100)

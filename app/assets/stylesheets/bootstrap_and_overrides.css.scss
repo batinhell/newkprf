@@ -19,13 +19,13 @@ body { padding-top: 30px; }
       position: relative;
       .search {
         position: absolute;
-        top: 40px;
+        top: 42px;
         right: 10px;
         margin: 20px 10px 0 0;
 
         input[type="text"] {
           font-size: 12px;
-          width: 142px;
+          width: 153px;
           border: 0 none;
           background: none;
           color: white;
@@ -33,12 +33,12 @@ body { padding-top: 30px; }
 
         input[type="submit"] {
           width: 35px;
-          height: 28px;
+          height: 40px;
           text-indent: -999px;
           overflow: hidden;
           cursor: pointer;
           border: 0 none;
-          background: url('/images/search.png')
+          background: url('/images/search.png') no-repeat;
         }
       }
       ul.links {
@@ -58,26 +58,28 @@ body { padding-top: 30px; }
             margin: 0;
           }
           .kprf {
-            width: 65px;
-            background: url('/images/kprf.png') no-repeat 0 0;
+            width: 80px;
+            background: url('/images/ck1.png') no-repeat 0 0;
           }
           .rss {
-            width: 27px;
-            background: url('/images/rss.png') no-repeat 0 0;
+            width: 30px;
+            background: url('/images/rss1.png') no-repeat 0 0;
           }
           .you {
             width: 60px;
-            background: url('/images/you.png') no-repeat 0 0;
+            background: url('/images/you1.png') no-repeat 0 0;
             height: 30px;
+            display: block;
+            padding-bottom: 5px;
           }
           .vk {
-            background: url('/images/vk.png') no-repeat 0 0;
+            background: url('/images/vk1.png') no-repeat 0 0;
           }
         }
       }
 
       border-top: 1px solid #F27449;
-      height: 100px;
+      height: 108px;
       background: #000 url(/images/shapka.jpg) repeat-x;
       a {
         //background: url(/images/sitelogo.png) no-repeat;
@@ -118,6 +120,10 @@ body { padding-top: 30px; }
             .news_title {
               padding-left: 10px;
               padding-right: 10px;
+              a {
+                font-size: 11px;
+                line-height: 7px;
+              }
             }
           }
         }

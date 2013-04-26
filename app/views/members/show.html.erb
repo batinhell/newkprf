@@ -2,7 +2,7 @@
   <div class="member_inner">
     <div class="span4">
       <div class="member_image">
-        <%= image_tag @member.image_url(:slider), :class => 'img-polaroid', :data => { :colorbox => true } %>
+        <%= image_tag @member.image_url(:member), :class => 'img-polaroid', :data => { :colorbox => true } %>
       </div>
     </div>
       
@@ -15,6 +15,7 @@
     <div class="member_bio"><%= @member.biography.html_safe %></div>
   </div>
 </div>
+
 <% if @related_news %>
   <div class="related">
     <h3>Новости по теме</h3>

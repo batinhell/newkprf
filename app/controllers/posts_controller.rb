@@ -32,15 +32,19 @@ class PostsController < ApplicationController
 
   def update
     @post = Post.find(params[:id])
-    if @post.update_attributes(params[:post])
-      if params[:post][:image].present?
-        render :crop
+    respond_to do |format|
+      if @post.update_attributes(params[:post])
+        if params[:post][:image].present?
+          render :crop
+        else
+          format.html { redirect_to(@post, notice: 'Post was successfully updated.') }
+          format.json { respond_with_bip(@post) }
+        end
       else
-        redirect_to @post, notice: 'Post was successfully updated.'
+        format.html { render :action => "edit" }
+        format.json { respond_with_bip(@post) }
       end
-    else
-      render :edit
-    end
+    end  
   end
 
   def destroy

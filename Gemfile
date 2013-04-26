@@ -54,3 +54,4 @@ gem 'russian', '~> 0.6.0'
 gem "nested_form"
 gem "rvm-capistrano"
 gem "colorbox-rails"
+gem "best_in_place"

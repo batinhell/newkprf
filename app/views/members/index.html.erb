@@ -5,7 +5,7 @@
       <% department.members.each do |member|  %>
         <div class="member">
           <div class="member_image">
-            <%= link_to(image_tag(member.image_url(:slider), :class=>'img-polaroid'), member_path(member)) %>
+            <%= link_to(image_tag(member.image_url(:member), :class=>'img-polaroid'), member_path(member)) %>
           </div> 
           <div class="member_name"><b><%= link_to member.name, member_path(member) %></b></div> 
           <div class="member_desc"><%= member.description %></div>

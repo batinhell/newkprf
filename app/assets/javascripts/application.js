@@ -17,9 +17,11 @@
 //= require ckeditor/init
 //= require jquery_ujs
 //= require colorbox-rails
+//= require best_in_place
+//= require best_in_place.purr
 
 $(document).ready(function(){
-
+  $('.best_in_place').best_in_place()
   $('#slidorion').slidorion({
     effect: 'slideUp',
     autoPlay: true,

@@ -8,11 +8,14 @@ class Post < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   validates :title, :description, :image, :presence => true
   scope :slider, where(:in_slider => true).limit(3)
-
+  include ActionView::Helpers::TextHelper
 
   def crop_image
     image.recreate_versions! if crop_x.present?
   end
 
+  def mk_description
+    simple_format(self.description)
+  end
 
 end
