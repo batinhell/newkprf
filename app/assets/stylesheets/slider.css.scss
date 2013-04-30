@@ -1,0 +1,88 @@
+#mainslider {
+  width: 645px;
+  height: 220px;
+  margin: 8px auto 4px;
+  position: relative;
+  overflow: hidden;
+
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .scrollable {
+    width: 314px;
+    height: 220px;
+    border-right: 1px solid white;
+    overflow: hidden;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    left: -10px;
+
+    .slideitems {
+      width: 300px;
+      height: 900px;
+      position: absolute;
+      display: block;
+    }
+
+
+  }
+
+  .slider_nav {
+    position: relative;
+    left: 304px;
+    width: 335px;
+    height: 220px;
+    margin: 0;
+    padding: 0;
+
+    ul {
+      margin: 0;
+    }
+
+    .submitDOWN {
+      background-position: center -13px;
+      padding-bottom: 2px;
+    }
+
+    .border {
+      border-top: 1px solid #515151;
+      border-bottom: 1px solid #000;
+      background-color: #232323;
+    }
+
+    li {
+      width: 320px;
+      height: 70px;
+      text-align: left;
+      overflow: hidden;
+      padding: 2px 0;
+      left: -50px;
+      padding-left: 10px;
+
+      a {
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      }
+    }
+
+    li.show {
+      background: transparent url(/images/away1.png) no-repeat;
+      height: 70px;
+      position: relative;
+      width: 320px;
+      padding: 0 29px 0 29px;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      z-index: 50;
+    }
+
+  }
+
+
+}
