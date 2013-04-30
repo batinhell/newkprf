@@ -12,7 +12,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   version :slider do
-    resize_to_fill(300, 200)
+    resize_to_fill(300, 220)
   end
 
   version :member do
