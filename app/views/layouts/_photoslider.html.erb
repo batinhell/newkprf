@@ -9,7 +9,7 @@
   <div class="carousel-inner">
     <% $i = true %>
     <% @albums = Album.limit(3).each do |album| %>
-      <div class="<%= $i == true ? "active item" : "item" %>"><img src="<%= album.photos.first.image.slider.url %>">
+      <div class="<%= $i == true ? "active item" : "item" %>"><a href="<%= album_path(album) %>"><img src="<%= album.photos.first.image.slider.url %>"></a>
         <div class="carousel-caption"><%= album.name %></div>
       </div>
     <% $i = false %>

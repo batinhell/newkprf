@@ -13,7 +13,6 @@
 
 //= require jquery
 //= require bootstrap
-//= require jquery.slidorion
 //= require ckeditor/init
 //= require jquery_ujs
 //= require colorbox-rails
@@ -22,12 +21,7 @@
 //= require slider
 
 $(document).ready(function(){
-  $('.best_in_place').best_in_place()
-  $('#slidorion').slidorion({
-    effect: 'slideUp',
-    autoPlay: true,
-    speed: 500
-  });
+  $('.best_in_place').best_in_place();
 
   (function(){
         // menu interaction

@@ -1,7 +1,6 @@
 #mainslider {
   width: 645px;
   height: 220px;
-  margin: 8px auto 4px;
   position: relative;
   overflow: hidden;
 
@@ -56,10 +55,10 @@
 
     li {
       width: 320px;
-      height: 70px;
+      height: 72px;
       text-align: left;
       overflow: hidden;
-      padding: 2px 0;
+      padding: 0px 0;
       left: -50px;
       padding-left: 10px;
 
@@ -71,15 +70,18 @@
     }
 
     li.show {
-      background: transparent url(/images/away1.png) no-repeat;
-      height: 70px;
+      background: transparent url(/images/away2.png) no-repeat;
+      height: 73px;
       position: relative;
       width: 320px;
       padding: 0 29px 0 29px;
       color: #fff;
-      font-size: 14px;
+      
       border: none;
       z-index: 50;
+      a {
+        //font-weight: bold;
+      }
     }
 
   }

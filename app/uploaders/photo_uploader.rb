@@ -40,6 +40,10 @@ class PhotoUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [200, 200]
   end
 
+  # version :banner do
+  #   process :resize_to_fill => [150, 78]
+  # end
+
   version :slider do
     process :resize_to_fill => [400, 300]
   end

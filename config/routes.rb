@@ -1,6 +1,9 @@
 Newkprf::Application.routes.draw do
   
   
+  resources :banners
+
+
   get "test/index"
 
   resources :departments

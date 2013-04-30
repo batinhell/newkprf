@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
   validates :title, :description, :image, :presence => true
   scope :slider, where(:in_slider => true).limit(3)
   include ActionView::Helpers::TextHelper
+  default_scope :order => 'created_at DESC'
 
   def crop_image
     image.recreate_versions! if crop_x.present?
