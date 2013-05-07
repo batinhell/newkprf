@@ -11,13 +11,14 @@
   padding-left: 30px;
 
   .member {
-    width: 180px;
+    width: 210px;
     float: left;
     margin-bottom: 30px;
     margin-right: 20px;
-    height: 470px;
+    height: 400px;
 
     .member_name {
+      width: 100px;
       margin: 10px 0;
       text-transform: uppercase;
       a {

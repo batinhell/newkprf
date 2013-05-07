@@ -1,4 +1,7 @@
 class MembersController < InheritedResources::Base
+
+  layout 'album'
+
   def show
     @member = Member.find(params[:id])
     @related_news = @member.posts
