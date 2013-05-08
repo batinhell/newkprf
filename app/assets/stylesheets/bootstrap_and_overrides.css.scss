@@ -175,4 +175,11 @@ body { padding-top: 30px; }
   }
 }
 
-
+.pagination {
+  .page {
+    font-size: 20px;
+  }
+  .current {
+    color: red;
+  }
+}
