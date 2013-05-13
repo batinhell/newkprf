@@ -7,8 +7,10 @@
     <li><a href="http://vk.com/kprf29" class="vk" target="_blank"></a></li>
   </ul>
 <div class="search">
-  <form>
-    <input type="text" placeholder="Поиск">
-    <input type="submit">
-  </form>
+  <%= form_tag "search/index", :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
 </div>

@@ -1,0 +1,18 @@
+<div class="news">
+  <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <div class="row-fluid">
+          <div class="news_image span4">
+            <%= link_to image_tag(post.image_url(:thumb).to_s), post_path(post) %>
+          </div>
+          <div class="news_title span8">
+            <%= link_to truncate(post.title, :length => 95, :separator => ' '), post_path(post) %>
+          </div>
+        </div>
+        <hr>
+      </li>
+    <% end %>
+  </ul>
+  <%= paginate @posts, :left => 1, :right => 1 %>
+</div>

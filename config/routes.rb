@@ -1,6 +1,8 @@
 Newkprf::Application.routes.draw do
   
   
+  get "search/index"
+
   resources :banners
 
 

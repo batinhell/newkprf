@@ -19,4 +19,12 @@ class Post < ActiveRecord::Base
     simple_format(self.description)
   end
 
+  def self.search(search)
+    if search
+      where 'title LIKE :search OR description LIKE :search', :search => "%#{search}%"
+    else
+      scoped
+    end
+  end
+
 end
