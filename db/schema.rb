@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130508111224) do
+ActiveRecord::Schema.define(:version => 20130514101631) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -134,6 +134,8 @@ ActiveRecord::Schema.define(:version => 20130508111224) do
     t.string   "slug"
     t.boolean  "ruso"
     t.boolean  "rus_lad"
+    t.string   "video"
+    t.integer  "album_id"
   end
 
   create_table "spud_photo_albums", :force => true do |t|

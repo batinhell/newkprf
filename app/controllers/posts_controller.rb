@@ -7,6 +7,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @photos = @post.albums.photos
+    render :layout => 'album'
   end
 
   def new

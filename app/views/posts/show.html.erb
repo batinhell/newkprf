@@ -1,6 +1,16 @@
 <div class="news-one">
   <div class="date"><%= l @post.created_at.strftime('%d/ %B/ %Y').to_date  %></div>
-  <div class="title"><h1><%= best_in_place_if admin_user_signed_in?,  @post, :title, :html_attrs => { :style => "width:580px"} %></h1></div> 
-  <div class="image"><%= image_tag @post.image_url(:large) %></div> 
-  <div class="desc"><%= best_in_place_if admin_user_signed_in?, @post, :description, :type => :textarea, :html_attrs => { :style => "width:580px"}, :display_as => :mk_description %></div>
+  <div class="title"><h1><%= best_in_place_if admin_user_signed_in?,  @post, :title, :html_attrs => { :style => "width:580px"} %></h1>
+  </div>
+  <% if @post.video.present? %>
+    <iframe width="600" height="400" src="<%= @post.video %>" frameborder="0" allowfullscreen>
+    </iframe>
+  <% else %>  
+    <div class="image"><%= image_tag @post.image_url(:large) %></div>
+  <% end %>   
+  <div class="desc"><%= best_in_place_if admin_user_signed_in?, @post, :description, :type => :textarea, :html_attrs => { :style => "width:580px"}, :display_as => :mk_description %>
+  </div>
+  <% @photos.each do |photo| %>
+    <%= link_to image_tag(photo.image.thumb.url, :class=>"img-polaroid"), photo.image.url, rel: 'group1', :data => { :colorbox => true, :colorbox_static => true } %>
+  <% end %>
 </div>

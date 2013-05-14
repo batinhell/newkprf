@@ -25,7 +25,6 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'meta_request'
-  gem 'sunspot_solr'
 end
 
 group :production do
@@ -56,4 +55,3 @@ gem "nested_form"
 gem "rvm-capistrano"
 gem "colorbox-rails"
 gem "best_in_place"
-gem 'sunspot_rails'

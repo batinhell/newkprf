@@ -36,9 +36,19 @@
       <%= f.check_box :rus_lad %>
     </div>
     
-   <br>
+    <br>
     <div class="field">
-    <%= f.file_field :image %>
-  </div>
+      <%= f.label :album_id, 'Выберите альбом если нужно' %><br />
+      <%= f.select :album_id, options_from_collection_for_select(Album.all, :id, :name), { :include_blank => true } %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.label :video %><br />
+      <%= f.text_field :video %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
     <%= f.actions :submit %>
 <% end %>

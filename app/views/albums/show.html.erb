@@ -1,6 +1,6 @@
 <div class="photos"> 
   <div class="photo_wrap">
-  <h1><%= @album.name %></h1>
+  <h1><%= @album.name %></h1> 
   <p><%= @album.description %></p>
   <% @photos.each do |photo| %>
     <%= link_to image_tag(photo.image.thumb.url, :class=>"img-polaroid"), photo.image.url, rel: 'group1', :data => { :colorbox => true, :colorbox_static => true } %>
