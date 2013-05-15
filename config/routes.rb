@@ -1,6 +1,11 @@
 Newkprf::Application.routes.draw do
   
   
+  resources :documents
+
+
+  get "documents/index"
+
   get "search/index"
 
   resources :banners

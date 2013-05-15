@@ -98,3 +98,32 @@ a:hover {
   }
 
 }
+
+.agit {
+  width: 900px;
+  margin: 0 auto;
+  .agits_wrap {
+    float: left;
+    margin-left: 5px;
+    .agit_link {
+      width: 200px;
+      margin: 10px 0;
+      height: 100px;
+      //padding-left: 10px;
+    }
+  }
+}
+
+.agit-one {
+  padding: 0 20px;
+  color: #C00;
+  a {
+    color: #C00;
+  }
+}
+
+.doc-list {
+  a {
+    color: #C00;
+  }
+}

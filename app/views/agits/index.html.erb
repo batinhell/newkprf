@@ -1,16 +1,9 @@
-<div class="agits">
-  <ul>
-    <% @agits.each do |agit| %> 
-      <li>
-        <div class="row-fluid">
-          <div class="agit_name span4">
-            <%= agit.name %>
-          </div>
-          <div class="agit_link span8">
-            <%= link_to "Скачать", agit.image.url %>
-          </div>
-        </div>
-      </li>
-    <% end %>
-  </ul>
+<div class="agit"> 
+  <% @agits.each do |agit| %>
+    <div class="agits_wrap">
+      <%= link_to image_tag(agit.file.thumb.url, :class=>"img-polaroid"), agit.file.url, rel: 'group1', :data => { :colorbox => true, :colorbox_static => true } %>
+      <div class="agit_link"><%= link_to agit.name, agit_path(agit) %></div> 
+    </div>
+  <% end %>
+  <div class="clearfix"></div>
 </div>

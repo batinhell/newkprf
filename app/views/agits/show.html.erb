@@ -1,20 +1,6 @@
-<p id="notice"><%= notice %></p>
+<div class="agit-one">
+  <h2><%= @agit.name %></h2>
+  <p><%= image_tag(@agit.file.thumb.url) %></p>
+  <%= link_to "Скачать", @agit.image.url %>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @agit.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @agit.description %>
-</p>
-
-<p>
-  <b>Image:</b>
-  <%= @agit.image %>
-</p>
-
-
-<%= link_to 'Edit', edit_agit_path(@agit) %> |
-<%= link_to 'Back', agits_path %>

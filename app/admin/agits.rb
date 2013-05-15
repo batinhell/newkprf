@@ -3,7 +3,8 @@ ActiveAdmin.register Agit do
     f.inputs "Details" do
       f.input :name
       f.input :description
-      f.input :image, :as => :file
+      f.input :image, :as => :file, :label => "File"
+      f.input :file, :as => :file, :label => "Image"
     end
     f.buttons
   end

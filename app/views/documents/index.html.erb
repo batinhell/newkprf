@@ -1,0 +1,12 @@
+<ul class="doc-list">
+  <ul class="list">
+    <% @documents.each do |document| %>
+    <li class="doc">
+      <div class="doc-name"><%= document.name %></div>
+      <div class="doc-link"><%= link_to 'Скачать', document.file.url %></div>
+    </li>
+    <hr>
+    <% end %>
+  </ul>
+</ul>
+
