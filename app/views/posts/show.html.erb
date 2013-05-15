@@ -10,7 +10,9 @@
   <% end %>   
   <div class="desc"><%= best_in_place_if admin_user_signed_in?, @post, :description, :type => :textarea, :html_attrs => { :style => "width:580px"}, :display_as => :mk_description %>
   </div>
-  <% @photos.each do |photo| %>
-    <%= link_to image_tag(photo.image.thumb.url, :class=>"img-polaroid"), photo.image.url, rel: 'group1', :data => { :colorbox => true, :colorbox_static => true } %>
-  <% end %>
+  <% if @photos.present? %>
+    <% @photos.each do |photo| %>
+      <%= link_to image_tag(photo.image.thumb.url, :class=>"img-polaroid"), photo.image.url, rel: 'group1', :data => { :colorbox => true, :colorbox_static => true } %>
+    <% end %>
+  <% end %>  
 </div>

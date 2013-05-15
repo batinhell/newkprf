@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @photos = @post.albums.photos
+    @photos = @post.albums.photos if @post.albums.present?
     render :layout => 'album'
   end
 
