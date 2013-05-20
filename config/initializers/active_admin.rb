@@ -114,7 +114,7 @@ ActiveAdmin.setup do |config|
 
   # == Batch Actions
   #
-  # Enable and disable Batch Actions
+  # Enable and disable Batch Actions 
   #
   config.batch_actions = true
 
@@ -145,7 +145,7 @@ ActiveAdmin.setup do |config|
   config.register_javascript 'ckeditor/init.js'
   config.register_javascript 'jquery.Jcrop.js'
   config.register_javascript 'posts.js'
-  config.register_javascript 'jquery_nested_form'
+  config.register_javascript 'jquery_nested_form.js'
   # == CSV options
   #
   # Set the CSV builder separator (default is ",")
