@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   def show
     @page = Page.find(params[:id])
     @ruso = Post.where(:ruso => true)
+    @rus_lad = Post.where(:rus_lad => true)
   end
   def new
     @page = Page.new

@@ -2,4 +2,18 @@
 <div class="pages">
   <%= @page.content.html_safe %>
 </div>
-<% content_for :related %>
+<% if @page.title == "Русо" && @ruso.present? %>
+  <div class="related">
+    <h3>Новости по теме</h3>
+    <% @ruso.each do |post| %>
+      <div class="related_title"><%= link_to post.title, post_path(post) %></div>   
+    <% end %>
+  </div>
+ <% elsif @page.title == "Русский Лад" && @rus_lad.present? %>
+  <div class="related">
+    <h3>Новости по теме</h3>
+    <% @rus_lad.each do |post| %>
+      <div class="related_title"><%= link_to post.title, post_path(post) %></div>   
+    <% end %>
+  </div>
+<% end %>
