@@ -1,4 +1,4 @@
-<% @video = Video.last %>
+<% @video = Video.first %>
 <iframe width="305" height="245" src="<%= @video.url %>" frameborder="0" allowfullscreen>
 </iframe>
 <div class="title"><%= @video.name %></div>
