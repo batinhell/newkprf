@@ -12,6 +12,10 @@ class Post < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
   default_scope :order => 'created_at DESC'
 
+  def to_param
+    "#{id}-#{Russian.translit(title).parameterize}"
+  end
+
   def crop_image
     image.recreate_versions! if crop_x.present?
   end

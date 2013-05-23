@@ -4,13 +4,13 @@
     <ul class="menuTop nav">
       <% @main_pages.each do |main_page| %>
         <li>
-          <%= link_to main_page.title, "#{root_url}#{main_page.url}" %>
+          <%= link_to main_page.title, page_path(main_page) %>
           <% @subpages = main_page.subpages %>
           <% unless @subpages.empty? %>
             <div class="subMenu">
               <ul>
                 <% @subpages.each do |subpage| %>
-                <li><%= link_to subpage.title, "#{root_url}#{subpage.url}" %></li>
+                <li><%= link_to subpage.title, page_path(subpage) %></li>
                 <% end %>
               </ul>
             </div>
