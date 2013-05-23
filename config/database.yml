@@ -1,7 +1,1 @@
-development:
-  adapter: mysql2
-  host: localhost
-  encoding: utf8
-  database: newkprf
-  user: root
-  password: rjvbccfh
+/home/kprf/data/www/kprf-arh.ru/shared/config/database.yml
