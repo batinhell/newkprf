@@ -6,15 +6,9 @@ class Page < ActiveRecord::Base
   has_many :subpages, :class_name => 'Page', :foreign_key => 'parent_id'
   belongs_to :parent, :class_name => 'Page', :foreign_key => 'parent_id'
   default_scope :order => 'position ASC'
-  before_save :set_url
 
   def to_param
     "#{id}-#{Russian.translit(title).parameterize}"
   end
-
-  private
-    def set_url
-      self.url = "pages/#{self.slug}" unless self.url.present?
-    end
 
 end
