@@ -15,6 +15,7 @@ Newkprf::Application.routes.draw do
 
   resources :departments
 
+  resources :site
 
   root :to => 'site#index'
 
