@@ -1,7 +1,0 @@
-development:
-  adapter: mysql2
-  host: localhost
-  encoding: utf8
-  database: newkprf
-  user: root
-  password: rjvbccfh
